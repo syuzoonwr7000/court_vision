@@ -14,9 +14,8 @@ RUN npm install
 # アプリケーションコードをコピー
 COPY ./src /app/src
 
-# Vue.js アプリケーションをビルド
-RUN npm run build
-
-# ビルドしたファイルを公開
+# 開発サーバー用にポートを開放
 EXPOSE 8080
+
+# 開発サーバーを実行
 CMD ["npm", "run", "serve"]

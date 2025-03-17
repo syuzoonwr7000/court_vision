@@ -4,6 +4,7 @@
   "description": "Vue.js frontend for FastAPI app",
   "main": "src/main.js",
   "scripts": {
+    "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
