@@ -6,6 +6,8 @@ services:
     container_name: fastapi-backend
     ports:
       - "8000:8000"
+    volumes:
+      - ./frontend/dist:/app/frontend/dist
     networks:
       - app-network
   frontend:
